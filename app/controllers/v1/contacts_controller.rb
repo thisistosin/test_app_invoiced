@@ -1,5 +1,6 @@
 class V1::ContactsController < ApplicationController
     def index
+        binding.break
       @contacts = Contact.all
   
       render json: @contacts, status: :ok
