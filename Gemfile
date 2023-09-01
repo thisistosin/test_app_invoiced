@@ -31,6 +31,9 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 
 gem 'devise'
 
+# Gemfile
+
+gem 'simple_token_authentication', '~> 1.0' # see semver.org
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
