@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users #I'm not sure if I have seen this format
-  namespace :v1 do
+  namespace :v1, defaults:{format:JSON} do
     resources :contacts
     resource :sessions, only: [:create, :destroy]
   end
